@@ -1,0 +1,40 @@
+{
+  "name": "exeshka-folder-extension",
+  "displayName": "Create lib structure clean architecture",
+  "description": "An extension to copy Flutter lib folder.",
+  "version": "0.0.1",
+  "publisher": "exeshka",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.exeshkaCreateFolderSctruct"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.exeshkaCreateFolderSctruct",
+        "title": "Create lib structure clean architecture"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "exeshka-view",
+          "name": "Exeshka"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./out/cli.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "vscode": "^1.1.37"
+  }
+}
