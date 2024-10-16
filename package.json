@@ -15,11 +15,15 @@
     "commands": [
       {
         "command": "extension.saveSourceFolder",
-        "title": "Save Source Folder (exeshka extension)"
+        "title": "exeshka_folder_ex: Save folder"
       },
       {
         "command": "extension.copyToTargetFolder",
-        "title": "Copy to Target Folder  (exeshka extension)"
+        "title": "exeshka_folder_ex: Copy to Target Folder"
+      },
+      {
+        "command": "extension.deleteSavedFolder",
+        "title": "exeshka_folder_ex: Delete saved folder"
       }
     ]
   },
