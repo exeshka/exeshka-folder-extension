@@ -14,18 +14,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.exeshkaCreateFolderSctruct",
-        "title": "Create lib structure clean architecture"
+        "command": "extension.saveSourceFolder",
+        "title": "Save Source Folder (exeshka extension)"
+      },
+      {
+        "command": "extension.copyToTargetFolder",
+        "title": "Copy to Target Folder  (exeshka extension)"
       }
-    ],
-    "views": {
-      "explorer": [
-        {
-          "id": "exeshka-view",
-          "name": "Exeshka"
-        }
-      ]
-    }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
